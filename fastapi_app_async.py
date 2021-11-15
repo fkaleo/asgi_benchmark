@@ -1,3 +1,5 @@
+import time
+
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -5,4 +7,5 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    # time.sleep(1)
+    return b'Hello, world!'

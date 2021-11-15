@@ -1,5 +1,9 @@
+import time
+
+
 async def app(scope, receive, send):
     assert scope['type'] == 'http'
+    # time.sleep(1)
 
     await send({
         'type': 'http.response.start',
