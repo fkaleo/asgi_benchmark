@@ -3,7 +3,7 @@ from starlette.responses import PlainTextResponse
 from starlette.routing import Route
 
 
-def homepage(request):
+async def homepage(request):
     return PlainTextResponse('Hello, world!')
 
 

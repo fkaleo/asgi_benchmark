@@ -2,8 +2,8 @@ import http from 'k6/http';
 
 
 export let options = {
-    vus: 80,
-    duration: '30s',
+    vus: 10,
+    duration: '10s',
     ext: {
       loadimpact: {
         projectID: 3542013,
